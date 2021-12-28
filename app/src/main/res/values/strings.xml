@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Organizing Christmas</string>
+    <string name="email_et_string">Email</string>
+    <string name="contrasena_et_string">Contaseña</string>
+    <string name="login_bt_string">Iniciar Sesión</string>
+    <string name="registrarse_tv_string">¿No tienes una cuenta?</string>
+    <string name="registrarse_bt_string">¡Regístrate!</string>
+
+    <string name="registrar_email_et_string">Ingresa tu email</string>
+    <string name="registrar_contrasena_et_string">Ingresa la contraseña</string>
+    <string name="registrarse_final_bt_string">Registrarse</string>
+
+</resources>

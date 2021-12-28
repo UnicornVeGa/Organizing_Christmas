@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "559282654566",
+    "project_id": "organizing-christmas",
+    "storage_bucket": "organizing-christmas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559282654566:android:50854dbdf47b87c7524ca7",
+        "android_client_info": {
+          "package_name": "com.example.organizingchristmas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559282654566-8q41pj031pcriuqusnv09gv6khig4p8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy0dD1aQOFECuY8JmbqgIa0_aYVbYmsUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559282654566-8q41pj031pcriuqusnv09gv6khig4p8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

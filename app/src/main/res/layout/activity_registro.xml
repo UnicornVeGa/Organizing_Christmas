@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <TextView
+        android:id="@+id/registro_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <ScrollView
+        android:id="@+id/scroll_registro"
+        android:layout_width="wrap_content"
+
+        android:layout_height="601dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registro_tv"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/registrar_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/registrar_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/registrar_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Edad"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/genero_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Género" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mujer_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="16dp"
+
+                    android:text="Mujer" />
+
+                <RadioButton
+                    android:id="@+id/hombre_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Hombre" />
+
+                <RadioButton
+                    android:id="@+id/otroGenero_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Otro" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/registrar_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/registrar_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/soy_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soy..." />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/invitado_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="16dp"
+                    android:text="Invitado" />
+
+                <RadioButton
+                    android:id="@+id/organizador_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Organizador" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/quiero_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quiero..."
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/opcionesOrganizador_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/crearEvento_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crear un evento nuevo" />
+
+                <RadioButton
+                    android:id="@+id/unirmeAEvento_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unirme a un evento" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/ingresaIDEvento_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresa el ID del evento al que te unirás:"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/registrar_IDEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ID del evento"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ingresaContOrg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresa la contraseña para los organizadores:"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/registrar_contrasenaOrganizador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña de organizador"
+                android:inputType="textPersonName"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/registrame_rb"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:onClick="validacionRegistro"
+                android:text="Registrarme" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
