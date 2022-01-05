@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrganizingChristmas">
         <activity
+            android:name=".ui_organizador.cronograma.editor_cronograma"
+            android:exported="false" />
+        <activity
+            android:name=".ui_organizador.Feedback_organizador"
+            android:exported="false" />
+        <activity
+            android:name=".ui_invitado.Feedback_invitado"
+            android:exported="false" />
+        <activity
             android:name=".ui_organizador.MenuIntercambio_organizador"
             android:exported="false" />
         <activity
